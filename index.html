@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Drawing Board</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <canvas></canvas>
-    <br />
-    <div class="controls">
-      <input
-        class="pen-color"
-        type="color"
-        id="html5colorpicker"
-        value="#000001"
-        onchange="changePenColor(this)"
-      />
-      <input
-        class="bg-color"
-        type="color"
-        id="html5colorpicker"
-        value="#fffffe"
-        onchange="changeBgColor(this)"
-      />
-      <button class="eraser">Eraser</button>
-      <button class="pen">Pen</button>
-      <input
-        type="range"
-        name="widthSelector"
-        id="widthSelector"
-        value="1"
-        min="1"
-        max="40"
-        step="1"
-        onchange="changeWidth(this)"
-      />
-      <span>1</span>
-      <button id="clear">Clear</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Drawing Board</title>
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="LoaderStyle.css" />
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="loader.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Loader div -->
+  <div class="se-pre-con">
+    <h1>WhiteBoard App </h1>
+    <i class="fab fa-phoenix-squadron"></i>
+    <div class="love">
+      Made with ❤ love by Team Blaze
     </div>
-  </body>
+  </div>
+<!-- Loader Div ends -->
+
+  <canvas></canvas>
+  <br />
+  <div class="controls">
+    <input class="pen-color" type="color" id="html5colorpicker" value="#000001" onchange="changePenColor(this)" />
+    <input class="bg-color" type="color" id="html5colorpicker" value="#fffffe" onchange="changeBgColor(this)" />
+    <button class="eraser">Eraser</button>
+    <button class="pen">Pen</button>
+    <input type="range" name="widthSelector" id="widthSelector" value="1" min="1" max="40" step="1"
+      onchange="changeWidth(this)" />
+    <span>1</span>
+    <button id="clear">Clear</button>
+  </div>
+</body>
+
 </html>
