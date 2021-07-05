@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing Board</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <canvas></canvas>
+    <br />
+    <div class="controls">
+      <input
+        class="pen-color"
+        type="color"
+        id="html5colorpicker"
+        value="#000001"
+        onchange="changePenColor(this)"
+      />
+      <input
+        class="bg-color"
+        type="color"
+        id="html5colorpicker"
+        value="#fffffe"
+        onchange="changeBgColor(this)"
+      />
+      <button class="eraser">Eraser</button>
+      <button class="pen">Pen</button>
+      <input
+        type="range"
+        name="widthSelector"
+        id="widthSelector"
+        value="1"
+        min="1"
+        max="40"
+        step="1"
+        onchange="changeWidth(this)"
+      />
+      <span>1</span>
+      <button id="clear">Clear</button>
+    </div>
+  </body>
+</html>

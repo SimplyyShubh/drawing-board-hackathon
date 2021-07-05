@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  align-self: flex-start;
+  background-color: antiquewhite;
+}
+
+input[type="color"] {
+  width: 5rem;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 50;
+  right: 50;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 10px;
+  border: solid 1px black;
+}
+
+.controls > * {
+  display: block;
+}
